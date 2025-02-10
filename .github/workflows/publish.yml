@@ -8,17 +8,27 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
+      # Install R
+      - name: Install R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y r-base
+
+      # Set up Quarto
       - uses: quarto-dev/quarto-actions/setup@v2
-      - run: |
-          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
-          Rscript -e "install.packages(c('httr', 'jsonlite'))"
       - run: quarto render
+
+      # Upload the site artifact
       - uses: actions/upload-artifact@v4
         with:
           name: site
           path: _site
+
+      # Deploy to GitHub Pages
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
