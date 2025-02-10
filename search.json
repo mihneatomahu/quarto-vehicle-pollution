@@ -2,9 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "vehicle-pollution",
+    "title": "Vehicle Pollution in Europe",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This section displays real-time vehicle pollution data for various cities in Europe."
+  },
+  {
+    "objectID": "index.html#vehicle-pollution-data-for-europe",
+    "href": "index.html#vehicle-pollution-data-for-europe",
+    "title": "Vehicle Pollution in Europe",
+    "section": "",
+    "text": "This section displays real-time vehicle pollution data for various cities in Europe."
   },
   {
     "objectID": "about.html",

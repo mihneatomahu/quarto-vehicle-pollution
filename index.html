@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mihnea Toma">
 
-<title>vehicle-pollution</title>
+<title>Vehicle Pollution in Europe – vehicle-pollution</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,21 +108,36 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#vehicle-pollution-data-for-europe" id="toc-vehicle-pollution-data-for-europe" class="nav-link active" data-scroll-target="#vehicle-pollution-data-for-europe">Vehicle Pollution Data for Europe</a></li>
+  <li><a href="#load-the-necessary-r-script-to-fetch-data" id="toc-load-the-necessary-r-script-to-fetch-data" class="nav-link" data-scroll-target="#load-the-necessary-r-script-to-fetch-data">Load the necessary R script to fetch data</a></li>
+  <li><a href="#fetch-and-display-the-pollution-data" id="toc-fetch-and-display-the-pollution-data" class="nav-link" data-scroll-target="#fetch-and-display-the-pollution-data">Fetch and display the pollution data</a></li>
+  <li><a href="#display-the-pollutants-for-the-city" id="toc-display-the-pollutants-for-the-city" class="nav-link" data-scroll-target="#display-the-pollutants-for-the-city">Display the pollutants for the city</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">vehicle-pollution</h1>
+<h1 class="title">Vehicle Pollution in Europe</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mihnea Toma </p>
+          </div>
+  </div>
     
   
     
@@ -132,10 +148,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="vehicle-pollution-data-for-europe" class="level2">
+<h2 class="anchored" data-anchor-id="vehicle-pollution-data-for-europe">Vehicle Pollution Data for Europe</h2>
+<p>This section displays real-time vehicle pollution data for various cities in Europe.</p>
+</section>
+<section id="load-the-necessary-r-script-to-fetch-data" class="level1">
+<h1>Load the necessary R script to fetch data</h1>
+<p>source(“fetch_data.R”)</p>
+</section>
+<section id="fetch-and-display-the-pollution-data" class="level1">
+<h1>Fetch and display the pollution data</h1>
+<p>pollution_data &lt;- fetch_pollution_data()</p>
+</section>
+<section id="display-the-pollutants-for-the-city" class="level1">
+<h1>Display the pollutants for the city</h1>
+<p>pollution_data</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
