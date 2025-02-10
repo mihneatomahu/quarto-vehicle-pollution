@@ -1,7 +1,20 @@
 ---
-title: "vehicle-pollution"
+title: "Vehicle Pollution in Europe"
+author: "Mihnea Toma"
+format: html
+output: _site/index.html
 ---
 
-This is a Quarto website.
+## Vehicle Pollution Data for Europe
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This section displays real-time vehicle pollution data for various cities in Europe.
+
+```{r}
+# Load the necessary R script to fetch data
+source("fetch_data.R")
+
+# Fetch and display the pollution data
+pollution_data <- fetch_pollution_data()
+
+# Display the pollutants for the city
+pollution_data
