@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+# Ignore the Quarto _site/ folder (output directory)
+_site/
+.quarto/
+
+# Logs and backups
+*.log
+*.bak
+*.swp
+
+# Ignore Python cache files (if using Python for data analysis)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore R-related files (if using R)
+.Rhistory
+.RData
+.Rproj.user/
+
+# Ignore Jupyter Notebook checkpoints (if using Jupyter)
+.ipynb_checkpoints/
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore editor/IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -169,3 +199,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+=======
+_site/
+>>>>>>> ee39eaf (Initial commit)
+
+/.quarto/
