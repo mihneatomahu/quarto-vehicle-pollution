@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
+      - run: |
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+          Rscript -e "install.packages(c('httr', 'jsonlite'))"
       - run: quarto render
       - uses: actions/upload-artifact@v4
         with:
